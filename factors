@@ -1,17 +1,29 @@
 import sys
 
 def factors(n):
-    i = 2
-    while i * i <= n:
-        if n % i:
-            i += 1
-        else:
-            return (i, n // i)
-    return (n, 1)
+    """
+    Generate the factors of a number.
+    """
+    for i in range(2, n // 2 + 1):
+        if n % i == 0:
+            yield (i, n // i)
 
-with open(sys.argv[1], 'r') as f:
-    for line in f:
-        n = int(line.strip())
-        p, q = factors(n)
-        print(f"{n}={p}*{q}")
+def main():
+    # Read the file name from the command line
+    if len(sys.argv) != 2:
+        print("Usage: factors <file>")
+        sys.exit(1)
+    filename = sys.argv[1]
+
+    # Open the file and read the numbers
+    with open(filename) as f:
+        for line in f:
+            n = int(line)
+
+            # Find the factors of the number
+            for p, q in factors(n):
+                print(f"{n} = {p} * {q}")
+
+if __name__ == "__main__":
+    main()
 
