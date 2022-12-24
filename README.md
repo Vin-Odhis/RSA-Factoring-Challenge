@@ -2,7 +2,6 @@
 
 ![A screenshot of my project](https://imgs.search.brave.com/ZnIE7mRoD0STmtQDvyfN-GsffwpuxhlPFC8NZWwy_to/rs:fit:838:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4t/bUwyb0ZFRWJxd0Mw/cDUtY2xiZ3d3SGFF/TSZwaWQ9QXBp)
 
-![Image alt text](image_url = 100x20)
 
 RSA Factoring Challenge.
 
